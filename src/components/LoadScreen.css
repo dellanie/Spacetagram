@@ -1,0 +1,63 @@
+.background-overlay {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+  }
+  
+  .loading-icon-wrapper {
+    margin-top: 35vh;
+    text-align: center;
+  }
+  
+  .loading-icon {
+    width: 3em;
+    height: 3em;
+    background-color: white;
+    border: solid black 0.1em;
+  
+    margin: 0 auto 2em auto;
+  }
+  
+  .loading-icon2 {
+    width: 6em;
+    height: 6em;
+    background-color: none;
+    border: solid black 0.1em;
+    position: fixed;
+    z-index: 1;
+    /* top: 34vh;
+    left: 37vw; */
+    /* margin: 0 auto 2em auto; */
+  }
+  
+  .loading-icon-wrapper p {
+    color: black;
+  }
+  
+  .loading-icon-animation {
+    animation: spinning 5s infinite;
+  }
+  
+  @keyframes spinning {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loading-icon-animation-reverse {
+    animation: spinning-reverse 5s infinite;
+  }
+  
+  @keyframes spinning-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
