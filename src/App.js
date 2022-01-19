@@ -68,14 +68,7 @@ function App() {
     return info;
   }
 
-  function selectdate(dateValue){
-    let newStartDate =new Date();
-    newStartDate.setDate(new Date().getDate()- dateValue);
-    newStartDate = newStartDate.toISOString().slice(0,10);
-
-    setIsLoading(true);
-    fetchPhoto(newStartDate);
-  }
+  
   if (!isLoading){
     loadingscreen = "none";
     cards = createCards(jsondata).reverse();
